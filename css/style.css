@@ -1,0 +1,150 @@
+:root{
+    --letter-color: #ffffff;
+}
+
+/*#4a4f57;
+ #5b5f68;*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #222831;
+}
+
+header{
+    background: #111720;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: var(--letter-color);
+    font-size: clamp(2rem, 5vw, 4rem);
+}
+
+
+
+.container{
+    margin: auto;
+    width: min(90%, 600px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    gap: 40px;
+}
+
+.container_information{
+    text-align: center;
+    color: var(--letter-color);
+    font-size: 30px;
+}
+
+.container_score{
+    display: flex;
+    color: var(--letter-color);
+    gap: 30px;
+}
+
+.score{
+    font-size: 25px;
+}
+
+.score_img{
+    width: 100px;
+    height: 100px;
+}
+
+.container_options{
+    display: flex;
+    gap: 30px;
+}
+
+.options{
+    background: #393e46;
+    width: clamp(100px, 20vw, 160px);
+    height: clamp(100px, 20vw, 160px);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+}
+
+.options:hover{
+    background: #4a4f57;
+}
+
+.options:active {
+    transform: scale(0.9);
+}
+
+
+.options_img{
+    width: 50%;
+    height: 50%;
+}
+
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+
+
+  .modal-content {
+    background-color: #222831;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .modal_message{
+    color: var(--letter-color);
+    font-size: 30px;
+  }
+
+  .modal_btn{
+    background: #393E46;
+    cursor: pointer;
+    color: var(--letter-color);
+    width: 177px;
+    height: 57px;
+    border-radius: 15px;
+    border: none;
+    font-size: 25px;
+  }
+
+
+
+  .modal_btn:hover{
+    background: #4a4f57;
+  }
+
+  /* Clase para ocultar el modal */
+  .hidden {
+    display: none;
+  }

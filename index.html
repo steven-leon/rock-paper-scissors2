@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Rock Papper Scissor</h1>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="container_information">
+          <h2>Choose your weapon</h2>
+          <p>First to score 5 points wins the game</p>
+          <p>Result: <span id="result_message"></span></p>
+          <p>
+            <span id="resultPlayer"></span> vs <span id="resultComputer"></span>
+          </p>
+        </div>
+
+        <div class="container_score">
+          <div class="score">
+            <img
+              src="img/question.svg"
+              alt=""
+              class="score_img"
+              id="scoreImagePlayer"
+            />
+            <p>Player: <span id="counter_player"></span></p>
+          </div>
+
+          <div class="score">
+            <img
+              src="img/question.svg"
+              alt=""
+              class="score_img"
+              id="scoreImageComputer"
+            />
+            <p>Computer: <span id="counter_computer"></span></p>
+          </div>
+        </div>
+
+        <div class="container_options">
+          <div class="options" id="rock">
+            <img src="img/rock.svg" alt="" class="options_img" />
+          </div>
+          <div class="options" id="paper">
+            <img src="img/paper.svg" alt="" class="options_img" />
+          </div>
+          <div class="options" id="scissor">
+            <img src="img/scissor.svg" alt="" class="options_img" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+    <div id="modalOverlay" class="modal hidden">
+      <div class="modal-content">
+        <p id="modalMessage" class="modal_message">Paper beats Rock</p>
+        <button id="btnPlayAgain" class="modal_btn">Play again</button>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
